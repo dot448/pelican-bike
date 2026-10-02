@@ -10,14 +10,20 @@
   let paused=preference.matches, elapsed=0, previous=null, frame=null, honkStarted=null;
   const n=value=>Number(value.toFixed(3));
   const set=(el,name,value)=>el.setAttribute(name,value);
+  // 76-unit wheel centerline + half its 11-unit tire stroke = contact radius.
+  const tireRadius=81.5, wheelPeriod=1400, roadRepeat=120;
   function render() {
-    const phase=elapsed/1400*Math.PI*2, degrees=n(phase*180/Math.PI%360), bob=Math.sin(phase*2)*5;
+    const distance=elapsed/wheelPeriod*(2*Math.PI*tireRadius);
+    const wheelAngle=distance/tireRadius;
+    const phase=wheelAngle/2; // Two wheel turns per complete pedal revolution.
+    const degrees=n(wheelAngle*180/Math.PI%360), bob=Math.sin(phase*2)*5;
     wheels.forEach(wheel=>set(wheel,'transform',`rotate(${degrees})`));
-    set(parts.ride,'transform',`translate(${n(Math.sin(phase/4)*12)} 0)`);
+    // The camera follows the bicycle: no extra horizontal drift or wheel slip.
+    set(parts.ride,'transform','translate(0 0)');
     set(rider,'transform',`translate(0 ${n(bob)})`);
     set(scarf,'transform',`rotate(${n(Math.sin(phase*2.2)*7)} 493 208)`);
     set(cloud,'transform',`translate(${n(-150*(elapsed%40000)/40000)} 0)`);
-    set(road,'transform',`translate(${n(-120*(elapsed%1400)/1400)} 0)`);
+    set(road,'transform',`translate(${n(-(distance%roadRepeat))} 0)`);
     const feet=[phase+Math.PI,phase].map(angle=>({x:481+28*Math.cos(angle),y:391+28*Math.sin(angle)}));
     set(parts.crank,'d',`M${n(feet[0].x)} ${n(feet[0].y)}L${n(feet[1].x)} ${n(feet[1].y)}`);
     set(parts.pedals,'d',feet.map(f=>`M${n(f.x-12)} ${n(f.y)}h24`).join(''));
