@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f4ea">
+<meta name="description" content="A pelican, a bicycle, and absolutely nowhere to be. An animated SVG postcard from the coast.">
+<title>Pelican Pedal Club · The scenic route</title>
+<style>
+:root{color-scheme:light;--ink:#203f41;--paper:#f8f4ea;--coral:#da684d;--cycle:1.4s}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}main{max-width:1400px;margin:auto;padding:36px 6vw 24px}header,footer{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:12px;font-weight:800;letter-spacing:2px;display:flex;align-items:center;gap:10px}.brand svg{width:27px;height:27px}.edition{font:11px monospace;letter-spacing:1px}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(54px,7.5vw,108px);font-weight:400;letter-spacing:-5px;line-height:1.01;margin:55px 0 18px}h1 em{color:var(--coral);font-weight:400}.intro{display:flex;justify-content:space-between;align-items:end}.intro p{font-size:15px;line-height:1.7;max-width:250px;margin:0 0 23px;color:#657873}.scene{position:relative;margin-top:15px;background:#dcebe4;border-radius:16px;overflow:hidden;border:1px solid #23444016}.scene>svg{display:block;width:100%;height:auto}.badge{position:absolute;left:27px;top:25px;font:10px monospace;letter-spacing:2px;color:#426660}.controls{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:23px 0 36px}.caption{font:11px monospace;letter-spacing:1px;color:#687a73}.buttons{display:flex;gap:9px}button{font:12px Arial,sans-serif;border:1px solid #b9c8bf;color:var(--ink);background:transparent;border-radius:30px;padding:11px 17px;cursor:pointer}button:hover{background:#e5eade}button:focus-visible{outline:3px solid #da684d;outline-offset:3px}footer{border-top:1px solid #d8ddd0;padding-top:20px;font-size:11px;color:#6d7d76}.wheel{transform-box:fill-box;transform-origin:center;animation:spin var(--cycle) linear infinite}.crank{animation:spin var(--cycle) linear infinite;transform-origin:481px 391px}.rider{animation:bob calc(var(--cycle) / 2) ease-in-out infinite}.scarf{animation:flutter .65s ease-in-out infinite;transform-origin:453px 222px}.cloud{animation:drift 40s linear infinite}.road{animation:road 1.4s linear infinite}.paused *{animation-play-state:paused!important}.honk{opacity:0;transform-origin:637px 231px}.honking .honk{animation:honk .65s ease-out}.honking .head{animation:nod .65s ease-in-out;transform-origin:509px 231px}@keyframes spin{to{transform:rotate(360deg)}}@keyframes bob{50%{transform:translateY(3px)}}@keyframes flutter{50%{transform:rotate(-6deg)}}@keyframes drift{to{transform:translateX(-150px)}}@keyframes road{to{transform:translateX(-120px)}}@keyframes honk{25%,60%{opacity:1;transform:scale(1.06)}100%{opacity:0;transform:scale(1.12)}}@keyframes nod{40%{transform:rotate(-5deg)}}@media(max-width:650px){main{padding:24px 6vw}h1{letter-spacing:-3px;margin-top:40px}.intro{display:block}.intro p{max-width:280px;font-size:14px;margin-bottom:25px}.edition{font-size:9px}.brand{font-size:10px;letter-spacing:1px}.scene{margin-left:-3vw;margin-right:-3vw}.scene>svg{width:145%;max-width:none;margin-left:-22.5%}.badge{top:16px;left:15px;font-size:8px}.controls{align-items:start;margin-bottom:30px}.caption{max-width:135px;line-height:1.8;font-size:9px}.buttons{gap:6px}button{padding:10px 13px}footer{font-size:10px;align-items:start}.footer-right{text-align:right;max-width:140px}}@media(prefers-reduced-motion:reduce){.scene *{animation:none!important}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 20C8 25 20 26 24 15L30 12H22C19 3 10 6 12 14C7 12 4 14 3 20Z" fill="currentColor"/><circle cx="19" cy="10" r="1" fill="#f8f4ea"/></svg>PELICAN PEDAL CLUB</div><span class="edition">COASTAL POSTCARD № 001</span></header>
+<div class="intro"><h1>Take the<br><em>scenic route.</em></h1><p>A little sea breeze. A very big beak.<br>Absolutely nowhere to be.</p></div>
+<section class="scene" aria-label="Animated illustration of a pelican riding a red bicycle along the coast">
+<div class="badge">36° NORTH · GOOD VIBRATIONS</div>
+<svg viewBox="0 0 1100 510" role="img" aria-labelledby="scene-title scene-desc">
+<title id="scene-title">A pelican on a bicycle by the sea</title><desc id="scene-desc">A white pelican in a green cap and orange scarf pedals a coral bicycle. Wheels spin, its body bobs, and the coastal road glides past under a warm sun.</desc>
+<defs><pattern id="spokes" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 0H4" stroke="#f8f4ea"/></pattern><g id="wheel"><circle r="76" fill="#f8f4ea" fill-opacity=".32" stroke="#29494a" stroke-width="11"/><circle r="66" fill="none" stroke="#f8f4ea" stroke-width="3"/><g class="wheel" stroke="#72928b" stroke-width="1.5"><path d="M-65 0H65M0-65V65M-46-46L46 46M-46 46L46-46M-60-25L60 25M-25-60L25 60M-60 25L60-25M-25 60L25-60"/></g><circle r="7" fill="#29494a"/></g></defs>
+<rect width="1100" height="510" fill="#dcebe4"/><circle cx="847" cy="112" r="60" fill="#eac887"/>
+<g class="cloud" fill="#f8f4ea" opacity=".75"><path d="M125 115c0-17 26-22 34-7 7-28 50-29 58 0 17-12 41-2 42 14H125Z"/><path d="M644 69c4-13 23-16 31-5 8-20 34-19 42 0 16-6 28 1 31 11H644Z"/></g>
+<g fill="none" stroke="#819e94" stroke-width="2" stroke-linecap="round"><path d="M727 120q8-9 16 0q8-9 16 0M903 67q6-6 12 0q6-6 12 0"/></g>
+<path d="M0 271Q130 211 270 262T550 259T824 257T1100 225V430H0Z" fill="#9fbbb0"/><path d="M0 285Q100 273 191 285T419 291T743 279T1100 292V427H0Z" fill="#b9d3c8"/>
+<g stroke="#eff4e9" stroke-width="2" opacity=".75"><path d="M49 310h79m-29 15h36m636-22h76m-33 16h44m111 18h114m-471-28h37M206 344h81m607 26h58"/></g>
+<path d="M0 378Q155 341 290 375T590 382T870 366T1100 374V510H0Z" fill="#e6dfc7"/><path d="M0 423Q275 401 550 424T1100 414V510H0Z" fill="#f1ebd9"/>
+<g class="road" stroke="#c6c5ad" stroke-width="3" stroke-linecap="round"><path d="M0 467h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48m72 0h48"/></g>
+<g fill="#739187"><path d="M111 413l-14-42 19 22 0-48 10 43 19-21-15 47Z"/><path d="M951 413l-7-32 14 20 7-45 5 47 19-19-11 31Z"/></g>
+<ellipse cx="510" cy="459" rx="208" ry="9" fill="#697b66" opacity=".13"/>
+<g id="bicycle"><g transform="translate(371 380)"><use href="#wheel"/></g><g transform="translate(650 380)"><use href="#wheel"/></g>
+<g fill="none" stroke="#d56e54" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"><path d="M371 380L438 278 481 391 371 380 593 297 481 391M593 297L650 380M587 276L602 314"/><path d="M438 278L433 265" stroke="#365651" stroke-width="7"/><path d="M587 277L578 248 608 243" stroke="#365651" stroke-width="7"/></g><path d="M411 266q25-10 51-1" fill="none" stroke="#29494a" stroke-width="12" stroke-linecap="round"/><path d="M605 243h18" stroke="#29494a" stroke-width="10" stroke-linecap="round"/>
+<path d="M370 291h-40l-13 46h51" fill="none" stroke="#658176" stroke-width="5" stroke-linecap="round"/><g stroke="#29494a" stroke-width="4" fill="none"><path d="M372 380l108 19a9 9 0 0 0 0-18L372 372Z"/></g>
+<g class="crank"><path d="M461 380l40 22" stroke="#405b51" stroke-width="6"/><path d="M450 380h23M490 402h23" stroke="#29494a" stroke-width="7" stroke-linecap="round"/></g><circle cx="481" cy="391" r="8" fill="#f7efdd" stroke="#29494a" stroke-width="3"/>
+</g>
+<g class="rider"><path d="M458 277q-7 31 25 55l-4 39" fill="none" stroke="#c8974f" stroke-width="9" stroke-linecap="round"/><path d="M477 369l24 6" stroke="#c8974f" stroke-width="10" stroke-linecap="round"/>
+<path d="M384 211q4 50 41 71c39 22 83-2 93-42l-12-46q-33 35-68 31Z" fill="#fbfaf0" stroke="#29494a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M402 219q21 60 70 39q-13-12-27-17" fill="#e0e6d9" stroke="#a2b4a8" stroke-width="2"/>
+<path d="M488 236c-3-23-16-49-10-79 4-23 13-40 30-38 24 2 23 28 12 45-14 22-13 46-2 77" fill="#fbfaf0" stroke="#29494a" stroke-width="3"/>
+<g class="head"><path d="M510 139l104 13q-25 11-89 14Z" fill="#e5a54a" stroke="#29494a" stroke-width="3" stroke-linejoin="round"/><path d="M524 162q11 47 65 12l25-22" fill="#efbf72" stroke="#29494a" stroke-width="3" stroke-linejoin="round"/><path d="M524 159l86-6" stroke="#be833e" stroke-width="2"/><circle cx="507" cy="140" r="4" fill="#29494a"/><circle cx="508" cy="139" r="1" fill="white"/>
+<path d="M483 127q-1-23 21-23 23-1 29 22Z" fill="#487567" stroke="#29494a" stroke-width="3"/><path d="M490 127h56" stroke="#29494a" stroke-width="6" stroke-linecap="round"/><path d="M501 106l-2 18" stroke="#78998a" stroke-width="2"/></g>
+<g class="scarf"><path d="M493 201q-21 13-42 1-19-13-50-1l17 10-12 13q30-15 48-7 24 10 44-1Z" fill="#d96c50"/><path d="M451 209q-19-8-34-1" fill="none" stroke="#b55040" stroke-width="2"/></g><path d="M486 196q8 6 24 3l4 13q-12 7-25-1Z" fill="#d96c50"/>
+<path d="M470 236q36 31 102 6" fill="none" stroke="#29494a" stroke-width="17" stroke-linecap="round"/><path d="M470 233q36 31 102 6" fill="none" stroke="#f7f7eb" stroke-width="12" stroke-linecap="round"/><path d="M570 239l14 3" stroke="#e5a54a" stroke-width="9" stroke-linecap="round"/>
+</g>
+<g class="honk" fill="#d96c50" stroke="#d96c50" stroke-width="3" stroke-linecap="round"><path d="M638 148l16-7M640 163h20M635 177l15 10"/><text x="674" y="161" stroke="none" font-family="Georgia,serif" font-style="italic" font-size="24">honk!</text></g>
+</svg>
+</section>
+<div class="controls"><span class="caption">LESS HURRY. MORE HORIZON.</span><div class="buttons"><button id="pause" type="button" aria-pressed="false">Pause ride</button><button id="bell" type="button" aria-label="Make the pelican honk">Honk ↗</button></div></div>
+<footer><span>An ode to going a little slower.</span><span class="footer-right">Made of SVG &amp; sea air.</span></footer>
+<p id="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"></p>
+</main>
+<script>
+const scene=document.querySelector('.scene'),pause=document.querySelector('#pause'),bell=document.querySelector('#bell');
+let stopped=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function update(){scene.classList.toggle('paused',stopped);pause.setAttribute('aria-pressed',String(stopped));pause.textContent=stopped?'Resume ride':'Pause ride'}
+update();pause.addEventListener('click',()=>{stopped=!stopped;update()});
+let timer;bell.addEventListener('click',()=>{clearTimeout(timer);scene.classList.remove('honking');void scene.offsetWidth;scene.classList.add('honking');document.querySelector('#status').textContent='Honk! The pelican says hello.';timer=setTimeout(()=>scene.classList.remove('honking'),700)});
+</script>
+</body></html>
